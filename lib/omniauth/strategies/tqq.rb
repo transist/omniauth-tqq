@@ -3,7 +3,7 @@ require 'multi_json'
 
 module OmniAuth
   module Strategies
-    class Weibo < OmniAuth::Strategies::OAuth
+    class Tqq < OmniAuth::Strategies::OAuth
       option :name, 'tqq'
       option :sign_in, true
       def initialize(*args)
