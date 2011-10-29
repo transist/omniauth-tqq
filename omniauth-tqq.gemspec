@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Scott Ballantyne"]
   s.email       = ["ussballantyne@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{an omniauth strategy for tencent weibo}
+  s.description = %q{an omniauth strategy for tencent weibo}
 
   s.rubyforge_project = "omniauth-tqq"
 
