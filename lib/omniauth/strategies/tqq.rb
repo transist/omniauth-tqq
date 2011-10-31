@@ -31,7 +31,7 @@ module OmniAuth
         consumer
       end
 
-      uid { access_token.params[:open_id] }
+      # uid { access_token.params[:open_id] }
 
       info do
         {
@@ -79,9 +79,10 @@ module OmniAuth
         else
           opts[:oauth_callback] = callback_url
         end
+        @uid = request['open_id']
 
         @access_token = request_token.get_access_token(opts)
-        @access_token.params[:id] = request['open_id']
+        
         super
       rescue ::Timeout::Error => e
         fail!(:timeout, e)
