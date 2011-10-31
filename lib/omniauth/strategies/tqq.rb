@@ -70,7 +70,7 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= MultiJson.decode(access_token.get('http://open.t.qq.com/api/user/info?format=json').body)
-        puts
+        puts access_token.inspect
         puts @raw_info
         @raw_info
       rescue ::Errno::ETIMEDOUT
