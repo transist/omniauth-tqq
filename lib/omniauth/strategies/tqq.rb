@@ -31,7 +31,7 @@ module OmniAuth
         consumer
       end
 
-      uid { MultiJson.decode(access_token.get('http://open.t.qq.com/api/user/verify?format=json').body)['info']['openid'] }
+      uid { access_token.params[:open_id] }
 
       info do
         {
